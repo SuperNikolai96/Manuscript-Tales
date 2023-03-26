@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CollectibleCount : MonoBehaviour
 {
@@ -23,5 +24,12 @@ public class CollectibleCount : MonoBehaviour
     void UpdateCount()
     {
         text.text = $"{count} / {Collectible.total} ";
+        if (count >= 6)
+        {
+            SceneManager.LoadScene("StoryArc2");
+
+        }
+
     }
+
 }

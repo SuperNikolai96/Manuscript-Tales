@@ -21,5 +21,6 @@ public class Collectible : MonoBehaviour
             OnCollected?.Invoke();
             Destroy(gameObject); 
         }
+
     }
 }

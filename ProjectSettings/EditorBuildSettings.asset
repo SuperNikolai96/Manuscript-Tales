@@ -9,6 +9,15 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: d1c3109bdb54ad54c8a2b2838528e640
   - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 5b9f818541ebc3b4ebc4cb920b1d3467
+  - enabled: 1
+    path: Assets/Scenes/StoryArc1.unity
+    guid: fcfb9e6abef254a43aaaab93963823dd
+  - enabled: 1
     path: Assets/Scenes/By a (Blue) Hair's Breadth.unity
     guid: 1b7a4173f21270942aaf812a54265d4d
+  - enabled: 1
+    path: Assets/Scenes/StoryArc2.unity
+    guid: 5ad5856623faadb4f9a35b959da97df1
   m_configObjects: {}

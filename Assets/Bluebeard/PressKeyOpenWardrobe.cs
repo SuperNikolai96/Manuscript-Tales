@@ -40,7 +40,7 @@ public class PressKeyOpenWardrobe : MonoBehaviour
             if (Action == true)
             {
                 Instruction.SetActive(false);
-                AnimeObject.GetComponent<Animator>().Play("WardrobeAction");
+                AnimeObject.GetComponent<Animator>().Play("WardrobeSpiritAction");
                 ThisTrigger.SetActive(false);
                 DoorOpenSound.Play();
                 Action = false;

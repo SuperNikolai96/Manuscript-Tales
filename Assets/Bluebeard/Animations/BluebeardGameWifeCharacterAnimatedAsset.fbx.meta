@@ -317,7 +317,7 @@ ModelImporter:
     skinWeightsMode: 0
     maxBonesPerVertex: 5
     minBoneWeight: 0.001
-    optimizeBones: 1
+    optimizeBones: 0
     meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8

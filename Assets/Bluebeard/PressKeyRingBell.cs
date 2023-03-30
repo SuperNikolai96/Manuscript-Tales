@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 
@@ -10,8 +11,9 @@ public class PressKeyRingBell : MonoBehaviour
     public GameObject ThisTrigger;
     public AudioSource RingSound;
     public bool Action = false;
+    public string LevelToLoad;
 
-    void Start()
+void Start()
     {
         Instruction.SetActive(false);
 
@@ -23,13 +25,14 @@ public class PressKeyRingBell : MonoBehaviour
         {
             Instruction.SetActive(true);
             Action = true;
+
         }
     }
 
     void OnTriggerExit(Collider collision)
     {
         Instruction.SetActive(false);
-        Action = false;
+        Action = false; 
     }
 
 
@@ -43,9 +46,20 @@ public class PressKeyRingBell : MonoBehaviour
                 AnimeObject.GetComponent<Animator>().Play("BellRingAction");
                 ThisTrigger.SetActive(false);
                 RingSound.Play();
-                Action = false;
+                Invoke("TimedChangeScene", 5);
             }
+
+
         }
 
+
+    
+    }
+
+    public void TimedChangeScene()
+    {
+        {
+            SceneManager.LoadScene(LevelToLoad);
+        }
     }
 }

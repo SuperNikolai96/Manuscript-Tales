@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Bluebeard/Scenes/GameOver.unity
     guid: 7651cb4cf7e33464dbdd897fca7bb2db
+  - enabled: 1
+    path: Assets/Bluebeard/Scenes/StoryArc3.unity
+    guid: 93d29778b75049b4682e58d92ee50a20
   m_configObjects: {}

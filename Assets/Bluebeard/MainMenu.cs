@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
+
 {
     public void PlayGame()
     {
@@ -18,6 +19,11 @@ public class MainMenu : MonoBehaviour
     public void GoToMainMenu()
     {
         SceneManager.LoadScene("MainMenu");
+    }
+
+    public void RestartGame()
+    {
+        SceneManager.LoadScene("By a (Blue) Hair's Breadth Timed");
     }
 
     public void QuitGame()

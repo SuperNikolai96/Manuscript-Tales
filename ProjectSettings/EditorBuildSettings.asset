@@ -7,11 +7,11 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 0
     path: 
-    guid: d1c3109bdb54ad54c8a2b2838528e640
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Bluebeard/Scenes/MainMenu.unity
     guid: 5b9f818541ebc3b4ebc4cb920b1d3467
-  - enabled: 0
+  - enabled: 1
     path: Assets/Bluebeard/Scenes/StoryArc1.unity
     guid: fcfb9e6abef254a43aaaab93963823dd
   - enabled: 1

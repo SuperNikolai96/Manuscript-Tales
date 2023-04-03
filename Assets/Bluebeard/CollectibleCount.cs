@@ -2,10 +2,12 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class CollectibleCount : MonoBehaviour
+
 {
     TMPro.TMP_Text text;
     int count;
 
+    public string LevelToLoad;
     void Awake()
     {
         text = GetComponent <TMPro.TMP_Text>();
@@ -26,10 +28,17 @@ public class CollectibleCount : MonoBehaviour
         text.text = $"{count} / {Collectible.total} ";
         if (count >= 6)
         {
-            SceneManager.LoadScene("StoryArc2");
+            Invoke("TimedChangeScene", 3);
 
         }
 
+    }
+
+    public void TimedChangeScene()
+    {
+        {
+            SceneManager.LoadScene("StoryArc2");
+        }
     }
 
 }
